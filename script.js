@@ -70,12 +70,12 @@ function clearTimer() {
 
 // Start the Timer
 function startTimer() {
-    let timeLeft = 5; // Timer duration in seconds
+    let timeLeft = 10; // Timer duration in seconds
     timerFill.style.width = "100%"; // Reset the timer bar to full
 
     timer = setInterval(() => {
         timeLeft--;
-        timerFill.style.width = `${(timeLeft ) * 100}%`; // Update timer bar width
+        timerFill.style.width = `${(timeLeft /10) * 100}%`; // Update timer bar width
         if (timeLeft <= 0) {
             clearTimer();
             endGame(); // End the game if timer reaches 0
