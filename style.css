@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #f06, #8e44ad);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+h1, h2, p {
+    margin: 10px 0;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Timer Bar */
+#timer-bar {
+    width: 80%;
+    height: 25px;
+    background-color: #ddd;
+    margin: 20px 0;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+#timer-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+    width: 100%;
+    transition: width 0.1s linear;
+}
+
+/* Color Block */
+#color-block {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: 5px solid white;
+    border-radius: 15px;
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+#color-block:hover {
+    transform: rotate(5deg);
+}
+
+/* Options */
+#options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.option {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.option:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.option.correct {
+    box-shadow: 0 0 15px 5px #00ff00;
+}
+
+.option.wrong {
+    box-shadow: 0 0 15px 5px #ff0000;
+}
+
+/* End Screen */
+#end-screen {
+    text-align: center;
+}
+
+#final-score {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #45A049;
+}
